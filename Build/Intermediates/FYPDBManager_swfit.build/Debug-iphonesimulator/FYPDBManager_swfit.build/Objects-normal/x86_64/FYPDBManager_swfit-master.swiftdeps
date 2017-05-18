@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "e7578da13329b7c19ad131ab3d9345bd"
+build_time: [548415596, 430088000]
+inputs:
+  "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/ViewController.swift": [548415591, 0]
+  "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FYPDBBase.swift": [548408604, 0]
+  "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/AppDelegate.swift": [548392331, 0]
+  "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FYPDBManager.swift": [548415250, 0]
