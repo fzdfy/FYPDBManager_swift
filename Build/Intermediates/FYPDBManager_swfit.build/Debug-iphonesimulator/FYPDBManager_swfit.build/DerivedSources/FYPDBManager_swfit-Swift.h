@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -136,44 +137,79 @@ SWIFT_CLASS("_TtC18FYPDBManager_swfit11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FMDatabase;
+@class FMDatabaseQueue;
 
 SWIFT_CLASS("_TtC18FYPDBManager_swfit9FYPDBBase")
 @interface FYPDBBase : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class FMDatabase;
-@class FMDatabaseQueue;
-@class NSDictionary;
-
-SWIFT_CLASS("_TtC18FYPDBManager_swfit12FYPDBManager")
-@interface FYPDBManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FYPDBManager * _Nonnull shareInstance;)
-+ (FYPDBManager * _Nonnull)shareInstance;
 /**
   创建一个dataBase的一个全局对象
 */
 @property (nonatomic, strong) FMDatabase * _Nullable db;
 @property (nonatomic, strong) FMDatabaseQueue * _Nullable dbQueue;
+- (BOOL)checkDatabaseWithDatabaseName:(NSString * _Nonnull)databaseName lastVersion:(NSInteger)lastVersion;
+- (BOOL)onCreateWithDb:(FMDatabase * _Nonnull)db;
+- (BOOL)onUpgradeWithDb:(FMDatabase * _Nonnull)db oldVersion:(NSInteger)oldVersion lastVersion:(NSInteger)lastVersion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class User;
+@class NSMutableArray;
+
+SWIFT_CLASS("_TtC18FYPDBManager_swfit12FYPDBManager")
+@interface FYPDBManager : FYPDBBase
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) FYPDBManager * _Nonnull shareInstance;)
++ (FYPDBManager * _Nonnull)shareInstance;
+@property (nonatomic, readonly) NSInteger dbVersion;
 - (void)openDB:(NSString * _Nonnull)dbName;
 /**
   创建表
 
   returns:
-  <#return value description#>
+
 */
 - (BOOL)onCreateTable;
-- (void)insertUserWithUser:(NSDictionary * _Nonnull)user;
-- (NSArray * _Nonnull)getAllUser;
+- (BOOL)onCreateWithDb:(FMDatabase * _Nonnull)db;
+- (void)insertUserWithUser:(User * _Nonnull)user;
+- (NSMutableArray * _Nonnull)getAllUser;
+- (void)deleteUserForUserIDWithUserID:(NSString * _Nonnull)userID;
+- (BOOL)onUpgradeWithDb:(FMDatabase * _Nonnull)db oldVersion:(NSInteger)oldVersion lastVersion:(NSInteger)lastVersion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC18FYPDBManager_swfit4User")
+@interface User : NSObject
+@property (nonatomic, copy) NSString * _Nullable UserID;
+@property (nonatomic, copy) NSString * _Nullable LoginID;
+@property (nonatomic, copy) NSString * _Nullable LoginPassword;
+@property (nonatomic, copy) NSString * _Nullable UserName;
+@property (nonatomic, copy) NSString * _Nullable Title;
+- (nonnull instancetype)initWithDict:(NSDictionary<NSString *, id> * _Nonnull)dict OBJC_DESIGNATED_INITIALIZER;
+- (void)setValue:(id _Nullable)value forUndefinedKey:(NSString * _Nonnull)key;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class UITableView;
+@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18FYPDBManager_swfit14ViewController")
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSMutableArray * _Nonnull userList;
+@property (nonatomic, strong) UITableView * _Nonnull userTable;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull USERCell;)
++ (NSString * _Nonnull)USERCell;
+@property (nonatomic) BOOL editState;
 - (void)viewDidLoad;
+- (void)setUI;
+- (void)clickRightButton;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (UITableViewCellEditingStyle)tableView:(UITableView * _Nonnull)tableView editingStyleForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

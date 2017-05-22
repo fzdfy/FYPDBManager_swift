@@ -10,6 +10,7 @@
 		3A0416BC1ECD87B80010A422 /* FYPDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0416BB1ECD87B80010A422 /* FYPDBManager.swift */; };
 		3A0416BE1ECD881D0010A422 /* FYPDBBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0416BD1ECD881D0010A422 /* FYPDBBase.swift */; };
 		3A0416C11ECDA3940010A422 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0416C01ECDA3940010A422 /* libsqlite3.0.tbd */; };
+		3A0416D01ECEEE0E0010A422 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0416CF1ECEEE0E0010A422 /* User.swift */; };
 		3A45C9BF1ECD488B002B33F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45C9BE1ECD488B002B33F8 /* AppDelegate.swift */; };
 		3A45C9C11ECD488B002B33F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A45C9C01ECD488B002B33F8 /* ViewController.swift */; };
 		3A45C9C41ECD488B002B33F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A45C9C21ECD488B002B33F8 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		3A0416BB1ECD87B80010A422 /* FYPDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYPDBManager.swift; sourceTree = "<group>"; };
 		3A0416BD1ECD881D0010A422 /* FYPDBBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYPDBBase.swift; sourceTree = "<group>"; };
 		3A0416C01ECDA3940010A422 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3A0416CF1ECEEE0E0010A422 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3A45C9BB1ECD488B002B33F8 /* FYPDBManager_swfit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPDBManager_swfit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A45C9BE1ECD488B002B33F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A45C9C01ECD488B002B33F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A0416CE1ECEEDF20010A422 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				3A0416CF1ECEEE0E0010A422 /* User.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		3A45C9B21ECD488B002B33F8 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		3A45C9BD1ECD488B002B33F8 /* FYPDBManager_swfit */ = {
 			isa = PBXGroup;
 			children = (
+				3A0416CE1ECEEDF20010A422 /* User */,
 				3A45C9EC1ECD869B002B33F8 /* FMDB */,
 				3A45C9BE1ECD488B002B33F8 /* AppDelegate.swift */,
 				3A45C9C01ECD488B002B33F8 /* ViewController.swift */,
@@ -323,6 +334,7 @@
 				3A45C9BF1ECD488B002B33F8 /* AppDelegate.swift in Sources */,
 				3A0416BC1ECD87B80010A422 /* FYPDBManager.swift in Sources */,
 				3A45C9FA1ECD86CF002B33F8 /* FMDatabaseAdditions.m in Sources */,
+				3A0416D01ECEEE0E0010A422 /* User.swift in Sources */,
 				3A45C9FC1ECD86CF002B33F8 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

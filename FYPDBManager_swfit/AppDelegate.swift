@@ -16,6 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let databaseName = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! + "fypdb.sqlite"
+        
+       let result = FYPDBManager.shareInstance.checkDatabase(databaseName: databaseName, lastVersion: FYPDBManager.shareInstance.dbVersion)
+      if result {
+        
+        print("创建成功")
+      }else{
+        print("创建失败")
+        }
+        
         return true
     }
 

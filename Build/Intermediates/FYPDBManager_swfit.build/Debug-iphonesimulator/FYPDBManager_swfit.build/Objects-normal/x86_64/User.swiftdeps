@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "User"
+provides-nominal:
+- "C18FYPDBManager_swfit4User"
+provides-member:
+- ["C18FYPDBManager_swfit4User", ""]
+provides-dynamic-lookup:
+- "LoginID"
+- "UserName"
+- "setValue"
+- "LoginPassword"
+- "UserID"
+- "Title"
+depends-top-level:
+- "String"
+- "NSObject"
+- "User"
+- "Int"
+- !private "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "Age"]
+- ["Ps9AnyObject", "LoginID"]
+- ["Ps9AnyObject", "LoginPassword"]
+- ["Ps9AnyObject", "Title"]
+- ["Ps9AnyObject", "UserID"]
+- ["Ps9AnyObject", "UserName"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "setValue"]
+- !private ["Ps9AnyObject", "setValuesForKeys"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "Age"]
+- ["Ps7CVarArg", "LoginID"]
+- ["Ps7CVarArg", "LoginPassword"]
+- ["Ps7CVarArg", "Title"]
+- ["Ps7CVarArg", "UserID"]
+- ["Ps7CVarArg", "UserName"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "setValue"]
+- !private ["Ps7CVarArg", "setValuesForKeys"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "Age"]
+- ["Ps28CustomDebugStringConvertible", "LoginID"]
+- ["Ps28CustomDebugStringConvertible", "LoginPassword"]
+- ["Ps28CustomDebugStringConvertible", "Title"]
+- ["Ps28CustomDebugStringConvertible", "UserID"]
+- ["Ps28CustomDebugStringConvertible", "UserName"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "setValue"]
+- !private ["Ps28CustomDebugStringConvertible", "setValuesForKeys"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "Age"]
+- ["Ps23CustomStringConvertible", "LoginID"]
+- ["Ps23CustomStringConvertible", "LoginPassword"]
+- ["Ps23CustomStringConvertible", "Title"]
+- ["Ps23CustomStringConvertible", "UserID"]
+- ["Ps23CustomStringConvertible", "UserName"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "setValue"]
+- !private ["Ps23CustomStringConvertible", "setValuesForKeys"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Vs10Dictionary", "deinit"]
+- ["Ps9Equatable", "Age"]
+- ["Ps9Equatable", "LoginID"]
+- ["Ps9Equatable", "LoginPassword"]
+- ["Ps9Equatable", "Title"]
+- ["Ps9Equatable", "UserID"]
+- ["Ps9Equatable", "UserName"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "setValue"]
+- !private ["Ps9Equatable", "setValuesForKeys"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "Age"]
+- ["Ps8Hashable", "LoginID"]
+- ["Ps8Hashable", "LoginPassword"]
+- ["Ps8Hashable", "Title"]
+- ["Ps8Hashable", "UserID"]
+- ["Ps8Hashable", "UserName"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "setValue"]
+- !private ["Ps8Hashable", "setValuesForKeys"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- ["CSo8NSObject", "Age"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "LoginID"]
+- ["CSo8NSObject", "LoginPassword"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Title"]
+- ["CSo8NSObject", "UserID"]
+- ["CSo8NSObject", "UserName"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "setValue"]
+- !private ["CSo8NSObject", "setValuesForKeys"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "Age"]
+- ["PSo16NSObjectProtocol", "LoginID"]
+- ["PSo16NSObjectProtocol", "LoginPassword"]
+- ["PSo16NSObjectProtocol", "Title"]
+- ["PSo16NSObjectProtocol", "UserID"]
+- ["PSo16NSObjectProtocol", "UserName"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "setValue"]
+- !private ["PSo16NSObjectProtocol", "setValuesForKeys"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Os5Never", "deinit"]
+- ["Sq", "deinit"]
+- ["Vs12StaticString", "deinit"]
+- !private ["Vs12StaticString", "init"]
+- ["Su", "deinit"]
+- ["C18FYPDBManager_swfit4User", "Age"]
+- ["C18FYPDBManager_swfit4User", "Int"]
+- ["C18FYPDBManager_swfit4User", "LoginID"]
+- ["C18FYPDBManager_swfit4User", "LoginPassword"]
+- ["C18FYPDBManager_swfit4User", "String"]
+- ["C18FYPDBManager_swfit4User", "Title"]
+- ["C18FYPDBManager_swfit4User", "UserID"]
+- ["C18FYPDBManager_swfit4User", "UserName"]
+- ["C18FYPDBManager_swfit4User", "deinit"]
+- ["C18FYPDBManager_swfit4User", "init"]
+- ["C18FYPDBManager_swfit4User", "setValue"]
+- !private ["C18FYPDBManager_swfit4User", "setValuesForKeys"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps9_Hashable", "Age"]
+- ["Ps9_Hashable", "LoginID"]
+- ["Ps9_Hashable", "LoginPassword"]
+- ["Ps9_Hashable", "Title"]
+- ["Ps9_Hashable", "UserID"]
+- ["Ps9_Hashable", "UserName"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "setValue"]
+- !private ["Ps9_Hashable", "setValuesForKeys"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Si"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Os5Never"
+- "Sq"
+- "Vs12StaticString"
+- "Su"
+- "C18FYPDBManager_swfit4User"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FYPDBManager_swfit-Bridging-Header.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMDB.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMDatabase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.1.sdk/usr/include/sqlite3.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMResultSet.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMDatabasePool.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMDatabaseAdditions.h"
+- "/Users/MFQ/Documents/IOS_FYP/\u672C\u5730\u4ED3\u5E93\u5907\u4EFD/FYPDBManager_swfit/FYPDBManager_swfit/FMDatabaseQueue.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "deb0a805ac71e2b8f0beee55e7080d8b"
