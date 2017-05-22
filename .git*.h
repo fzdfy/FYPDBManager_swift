@@ -1,1 +1,0 @@
-nguist-language=swift
